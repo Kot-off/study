@@ -1,0 +1,505 @@
+@font-face {
+  font-family: "Muller Bold";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Muller Bold"), url("../src/fonts/MullerBold.woff2") format("woff2"), url("../src/fonts/MullerBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  font-family: "Muller Medium";
+  src: local("Muller Medium"), url("../src/fonts/MullerMedium.woff2") format("woff2"), url("../src/fonts/MullerMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Muller Regular"), url("../src/fonts/MullerRegular.woff2") format("woff2"), url("../src/fonts/MullerRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local("Muller Light"), url("../src/fonts/MullerLight.woff2") format("woff2"), url("../src/fonts/MullerLight.woff") format("woff");
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f1f1f1;
+  font-family: "Muller Regular", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+
+.error {
+  border: 2px #ff4019 solid !important;
+}
+
+.btn--reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title-of-contents {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-left: 42px;
+  margin-bottom: 24px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.global-input {
+  padding-left: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  color: #333333;
+  border-radius: 12px;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.arrow {
+  padding-left: 10px;
+}
+
+.grey {
+  color: #797979;
+}
+
+.bold {
+  font-size: 22px;
+  font-family: "Muller Bold", sans-serif;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  display-width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input::-moz-placeholder {
+  color: #f1f1f1;
+}
+
+.header-top {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 29px;
+  padding-top: 30px;
+}
+
+.header-top__tel {
+  margin-left: 26px;
+  font-size: 1.375rem;
+  line-height: 1;
+  color: #797979;
+  font-family: "Muller Bold", sans-serif;
+}
+
+.header-top__button {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 28pxv;
+}
+
+.nav__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list--item:first-child {
+  margin-left: 20px;
+}
+
+.nav__list--item:not(:first-child) {
+  margin-left: 45px;
+}
+
+.nav__search {
+  position: relative;
+}
+
+.nav__search input[type=search] {
+  width: 356px;
+  height: 48px;
+  padding: 0 15px;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-right: 21px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+input[type=image] {
+  position: absolute;
+  top: 12px;
+  left: 315px;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  width: 22px;
+  height: 22px;
+  outline: none;
+}
+
+.container {
+  /** outline: 1px solid red **/
+}
+
+.headers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.reservation {
+  width: 47%;
+}
+
+.reservation__table--item {
+  flex-flow: column nowrap;
+}
+
+.reservation__table input {
+  width: 100%;
+  height: 69px;
+  margin-bottom: 24px;
+}
+
+.reservation__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.reservation__buttons--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 70px;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #cc9933;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-family: "Muller Regular", sans-serif;
+}
+
+.reservation__buttons--proposals {
+  margin-left: 30px;
+}
+
+.reservation__buttons--proposals span {
+  color: #cc9933;
+}
+
+.special-offer {
+  width: 47%;
+  margin-left: 54px;
+  border-radius: 12px;
+}
+
+.special-offer__card {
+  display: flex;
+  width: 100%;
+  background-image: url(../src/img/slider/header-slider-1.png);
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.special-offer__card--description {
+  width: 70%;
+  padding-left: 30px;
+  margin-top: 236px;
+}
+
+.special-offer__card--description h4 {
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-family: "Muller Bold", sans-serif;
+}
+
+.special-offer__card--description p {
+  font-size: 32px;
+  color: #87766c;
+}
+
+.special-offer__card--description a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #cc9933;
+}
+
+.special-offer__card--description img {
+  padding-left: 8px;
+}
+
+.div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.services__title {
+  width: 100%;
+}
+
+.services__card:hover {
+  cursor: pointer;
+}
+
+.services__card {
+  width: 48%;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.services__card--image {
+  margin-bottom: 38px;
+}
+
+.services__card--description {
+  align-items: center;
+  margin-left: 40px;
+}
+
+.services__card--description a {
+  display: flex;
+  font-size: 22px;
+  line-height: 1;
+  color: #cc9933;
+}
+
+.services__card--description p {
+  width: 75%;
+  line-height: 2;
+}
+
+.arrow {
+  max-width: 18px;
+  height: 22px;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__title {
+  width: 100%;
+}
+
+.advantages__card:hover {
+  cursor: pointer;
+}
+
+.advantages__card {
+  display: flex;
+  align-items: center;
+  width: 23.5%;
+  min-height: 300px;
+  margin-bottom: 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.advantages__item {
+  display: block;
+  margin-left: 40px;
+}
+
+.advantages__item--image {
+  width: 62px;
+  height: 54px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.advantages__item--description {
+  width: 80%;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.accommodation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.accommodation__title {
+  width: 100%;
+}
+
+.accommodation__card {
+  position: relative;
+  width: 32%;
+  height: 440px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.accommodation__card--price {
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+}
+
+.accommodation__card--location {
+  margin-left: 44px;
+  margin-bottom: 22px;
+}
+
+.accommodation__card--btn {
+  display: flex;
+  width: 94px;
+  height: 40px;
+  margin-left: 44px;
+  padding: 10px;
+  color: #cc9933;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Muller Bold", sans-serif;
+}
+
+.star {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  margin-left: 30px;
+}
+
+.star img {
+  margin-left: 10px;
+}
+
+.all {
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.card-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/img-accommodation/accommodation-9.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}

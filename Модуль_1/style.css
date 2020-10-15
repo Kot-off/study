@@ -1,0 +1,14 @@
+.title {
+  font-size: 32px;
+  color: brown;
+}
+
+.text {
+  width: 700px;
+  color: green;
+}
+
+.images {
+  width: 1200px;
+  height: 600px;
+}

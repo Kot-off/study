@@ -1,0 +1,65 @@
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #fff
+  padding-top: 10px
+  padding-bottom: 10px
+  margin-bottom: 28pxv
+  border-radius: 12px
+
+  &__button
+    position: relative
+    width: 40px
+    height: 40px
+
+  &__list
+    display: flex
+
+    &--item a
+      position: relative
+      padding: 2px
+    &--item a:after
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      margin: auto
+      width: 0%
+      content: '.'
+      color: transparent
+      background: #aaa
+      height: 1px
+    &--item a:hover:after
+      width: 100%
+    &--item a::after
+
+    &--item:first-child
+      margin-left: 20px
+    &--item:not(:first-child)
+      margin-left: 45px
+  &__search
+    position: relative
+  &__search input[type=search]
+    width: 356px
+    height: 48px
+    padding: 0 15px
+    font-size: 0.875rem
+    line-height: 1
+    margin-right: 21px
+    background-color: #f1f1f1
+    border-radius: 15px
+    outline: none
+    border: none
+
+// Картинка в input-e
+input[type=image]
+  position: absolute
+  top: 12px
+  left: 315px
+  right: 0
+  bottom: 12px
+  display: flex
+  width: 22px
+  height: 22px
+  outline: none

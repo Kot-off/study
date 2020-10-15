@@ -1,0 +1,30 @@
+.container {
+  outline: 1px solid red;
+}
+
+.headers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 68px;
+}
+
+.reservation {
+  width: 50%;
+  outline: 1px solid green;
+}
+.reservation__table input {
+  width: 100%;
+  height: 69px;
+}
+.reservation__table input--item {
+  flex-flow: column nowrap;
+}
+
+.special-offer {
+  position: relative;
+  width: 50%;
+  outline: 1px solid green;
+}

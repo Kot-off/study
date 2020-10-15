@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Muller Bold";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Muller Bold"),
+    url("../src/fonts/MullerBold.woff2") format("woff2"),
+    url("../src/fonts/MullerBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  font-family: "Muller Medium";
+  src: local("Muller Medium"),
+    url("../src/fonts/MullerMedium.woff2") format("woff2"),
+    url("../src/fonts/MullerMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Muller Regular"),
+    url("../src/fonts/MullerRegular.woff2") format("woff2"),
+    url("../src/fonts/MullerRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local("Muller Light"),
+    url("../src/fonts/MullerLight.woff2") format("woff2"),
+    url("../src/fonts/MullerLight.woff") format("woff");
+}
+
+@mixin bold {
+  font-family: "Muller Bold", sans-serif;
+}
+
+@mixin medium {
+  font-family: "Muller Medium", sans-serif;
+}
+
+@mixin regular {
+  font-family: "Muller Regular", sans-serif;
+}
+
+@mixin light {
+  font-family: "Muller Light", sans-serif;
+}

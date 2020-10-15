@@ -1,0 +1,95 @@
+html
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+body
+  margin: 0
+  font-size: 16px
+  color: $text-color
+  background-color: $bg-color
+  +regular
+
+img
+  width: 100%
+  height: auto
+
+a
+  text-decoration: none
+  color: $text-color
+
+ul
+  padding: 0
+  list-style: none
+
+span
+  color: $gold
+
+.container
+  max-width: 1168px
+  margin: 0 auto
+
+.error
+  border: 2px #ff4019 solid !important
+
+.btn--reset
+  border: none
+  background: transparent
+  cursor: pointer
+
+// Настройка Оглавления
+.title-of-contents
+  font-size: 2.5rem
+  line-height: 1
+  margin-left: 42px
+  margin-bottom: 24px
+  color: $text-color
+  font-weight: 400
+
+// Общие стили input
+.global-input
+  padding-left: 20px
+  padding-top: 26px
+  padding-bottom: 26px
+  color: $text-color
+  border-radius: 12px
+  background-color: #ffffff
+  outline: none
+  border: none
+
+// Золотая стрелка рядом с текстом
+.arrow
+  padding-left: 10px
+
+// цвет
+.grey
+  color: $grey
+
+// bold
+.bold
+  font-size: 22px
+  +bold
+
+// Убирает крестик внутри input при вводе
+input[type=text]::-ms-clear
+  display: none
+   width : 0
+  height: 0
+input[type=text]::-ms-reveal
+  display: none
+  width : 0
+  height: 0
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
+
+// Цвет placeholder
+input::-moz-placeholder
+  color: #f1f1f1
